@@ -1,0 +1,45 @@
+.btn-slide {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #fff 50%, black 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+
+  color: #fff; /*For IE*/
+}
+
+.btn-slide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background: linear-gradient(90deg, #0058D0 50%, transparent 50%);*/
+  z-index: -1;
+}
+.btn-slide-blue:after {
+  background: linear-gradient(90deg, #0058D0 50%, transparent 50%);
+}
+.btn-slide-orange:after {
+  background: linear-gradient(90deg, #ff5842 50%, transparent 50%);
+}
+.btn-slide-black:after {
+  background: linear-gradient(90deg, #29292c 50%, transparent 50%);
+}
+
+.btn-slide,
+.btn-slide:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition-duration: .25s;
+  transition-timing-function: ease-out;
+}
+
+.btn-slide:hover,
+.btn-slide:hover:after {
+  background-position: 150%;
+
+  color: black; /*For IE*/
+}
