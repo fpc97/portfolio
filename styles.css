@@ -1,5 +1,5 @@
 /* TEST DELETE LATER */
-body{
+.header .vertical-center{
   background-color: #0058D0;
 }
 
@@ -13,37 +13,84 @@ body{
 html{
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Source Sans Variable", "Arial", sans-Serif;
+}
+
+body{
+  font-family: "Work Sans", "Arial", sans-Serif;
+  color: #1D1D1F;
+}
+
+body::before{
+  content: "";
+  display: inline-block;
+  height: 95vh;
+  width: 100%;
+  max-width: 100rem;
+  background-color: #0058D0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -9999;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: "Montserrat", "Arial", sans-Serif;
 }
 
+h2{
+  font-size: 7.2rem;
+  margin-bottom: 2.8rem;
+}
+h3{
+  font-size: 4.8rem;
+  line-height: 7rem;
+  margin-bottom: 4rem;
+}
+
+p, span, ul, ol{
+  font-size: 2.1rem;
+}
+
 p{
-  line-height: 4rem;
+  line-height: 5rem;
+  max-width: 60rem;
+  margin-bottom: 2rem;
+}
+
+ul, ol{
+  list-style: none;
 }
 
 .container{
   max-width: 120rem;
-  padding: 1rem;
+  padding: 9rem;
   margin: 0 auto;
+}
+
+.honeypot{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
 
 /* Header */
 .header{
-  position: relative;
   color: white;
-  font-size: 2.1rem;
   height: 100vh;
 }
 
 .header .container{
+  position: relative;
+  height: 100%;
+}
+
+.header .vertical-center{
   position: absolute;
-  top: 45%;
-  left: 0;
-  transform: translate(50%, -50%);
-  margin: 0;
+  top: 23%;
 }
 
 .header h1{
@@ -58,8 +105,10 @@ p{
 }
 
 .header button{
+  font-size: 1.9rem;
+  font-weight: bold;
   color: white;
-  padding: 2rem 5rem;
+  padding: 2.2rem 5rem;
   border: none;
   border-radius: .3rem;
   cursor: pointer;
@@ -79,4 +128,155 @@ p{
 }
 .header button:last-of-type:hover{
   background-color: #29292c;
+}
+
+.header .nav{
+  position: absolute;
+  top: 27%;
+  right: 0;
+  text-align: end;
+  font-size: 2.1rem;
+}
+
+.header .nav li{
+  margin-bottom: 5rem;
+  list-style: none;
+}
+
+.header .nav a,
+.header .nav a:link,
+.header .nav a:visited{
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+}
+
+/* About */
+.about{
+
+}
+
+.about li{
+  margin-bottom: 2rem;
+}
+
+.about h3{
+  margin-top: 6rem;
+}
+
+/* Case studies */
+.case-studies{
+
+}
+
+.case-studies h2{
+  margin-bottom: 8rem;
+}
+
+.case-studies h3{
+  margin-bottom: 2rem;
+  max-width: 50rem;
+}
+
+.project{
+  margin-bottom: 10rem;
+}
+
+.project p:last-of-type{
+  margin-bottom: 2.4rem;
+}
+
+.project h4{
+  margin-bottom: 3rem;
+}
+
+.project ul{
+	display: flex;
+	flex-flow: wrap row;
+  max-width: 60rem;
+}
+.project li{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project ul::after{
+  content: "";
+  flex-grow: 10;
+}
+
+.project li{
+	display: inline-block;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: .8rem 1.6rem;
+	text-align: center;
+
+	background-color: #ff5842;
+
+	flex-grow: 1;
+}
+
+/* Contact */
+.footer{
+  background-color: #1D1D1F;
+  color: white;
+}
+
+.contact a,
+.contact a:link,
+.contact a:visited{
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contact{
+
+}
+
+.contact .container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact address{
+  float: left;
+}
+
+.contact form{
+  float: left;
+  margin-left: 10rem;
+}
+
+.contact address{
+  margin-bottom: 4rem;
+}
+
+.contact address li{
+  margin-bottom: 2rem;
+}
+
+.contact form p{
+  margin-bottom: 1rem;
+}
+
+.contact input,
+.contact textarea{
+  padding: 1rem;
+  font-size: 1.8rem;
+  width: 40rem;
+}
+
+.contact .submit {
+  appearance: none;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  /* without this, the button would be as 
+  wide as its column (and the Name field) */
+  justify-self: start;
+  font-size: 1.8rem;
 }

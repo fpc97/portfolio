@@ -7,25 +7,26 @@
   <title>Francisco Perez | Front-end web development</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide-button.css">
 </head>
 <body>
-  <header class="header">
+  <header id="home" class="header">
     <article class="container">
       <div class="vertical-center">
-        <h1>Francisco Perez Cejuela</h1>
+        <h1 id="title">Francisco Perez</h1>
         <p>I'm a front-end developer who enjoys crafting smooth and polished web systems</p>
         <button>My work</button>
         <button>Contact me!</button>
       </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about" class="btn-slide btn-slide-blue">About</a></li>
+          <li><a href="#case-studies" class="btn-slide btn-slide-orange">Case studies</a></li>
+          <li><a href="#contact" class="btn-slide btn-slide-black">Contact</a></li>
+        </ul>
+      </nav>
     </article>
   </header>
-  <nav class="nav">
-    <ul>
-      <li><a>About</a></li>
-      <li><a>Case studies</a></li>
-      <li><a>Contact</a></li>
-    </ul>
-  </nav>
   <aside class="aside">
     <ul>
       <li><a>ASD</a></li>
@@ -34,13 +35,13 @@
     </ul>
   </aside>
   <main class="main">
-    <section class="about">
+    <section id="about" class="about">
       <article class="container">
         <h2>About me</h2>
         <p>I’m a JavaScript developer and occasional designer. I’ve worked creating webfronts for small businesses as well as intuitive browser tools.</p>
-        <p>I specialize in React and modern frameworks like Gatsby and Next.js. I’m also familiar with backend APIs and the Node.js ecosystem.</p>
-        <p> have experience implementing full-fledged sites  using SSG’s and SSR’s as well as with plain HTML, CSS, and JavaScript (such as this site!)</p>
-        <h3>I have some skills with:<h3>
+        <p>I specialize in React and modern frameworks such as Next and Gatsby. I’m also familiar with backend APIs and the Node.js ecosystem.</p>
+        <p>I have experience implementing full-fledged sites  using SSG’s and SSR’s as well as with plain HTML, CSS, and JavaScript (such as this site!)</p>
+        <h3>I have some skills with:</h3>
         <ul>
           <li>JavaScript</li>
           <li>React</li>
@@ -56,17 +57,124 @@
         </ul>
       </article>
     </section>
-    <section class="projects">
+    <section id="case-studies" class="case-studies">
       <article class="container">
-        <h2>Some things I've made</h2>
+        <h2>Some things I made</h2>
         <ul>
-          :)
+          <li class="project">
+            <h3>Calendar app</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rem quas nihil maiores quibusdam iste esse alias perspiciatis itaque porro cumque odit, doloremque nobis..</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rem quas nihil maiores quibusdam iste esse alias perspiciatis itaque porro cumque odit, doloremque nobis..</p>
+            <h4>Technologies used:</h4>
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+          <li class="project">
+            <h3>Calendar app</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rem quas nihil maiores quibusdam iste esse alias perspiciatis itaque porro cumque odit, doloremque nobis..</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rem quas nihil maiores quibusdam iste esse alias perspiciatis itaque porro cumque odit, doloremque nobis..</p>
+            <h4>Technologies used:</h4>
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+          <li class="project">
+            <h3>Calendar app</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rem quas nihil maiores quibusdam iste esse alias perspiciatis itaque porro cumque odit, doloremque nobis..</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rem quas nihil maiores quibusdam iste esse alias perspiciatis itaque porro cumque odit, doloremque nobis..</p>
+            <h4>Technologies used:</h4>
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>SASS/Scss</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
         </ul>
       </article>
     </section>
   </main>
   <footer class="footer">
-
+    <section id="contact" class="contact">
+      <article class="container">
+        <h2>Contact</h2>
+        <address>
+          <p><a href="mailto:fran.perez.cejuela@gmail.com">fran.perez.cejuela@gmail.com</a></p>
+          <ul>
+            <li><a href="mailto:fran.perez.cejuela@gmail.com">fran.perez.cejuela@gmail.com</a></li>
+            <li><a href="#">Whatsapp</a></li>
+            <li><a href="https://twitter.com/fpece_">@fpece_</a></li>
+          </ul>
+        </address>
+        <form>
+          <p class="honeypot">
+            <label for="asd">
+              ASD
+              <br/>
+              <input id="asd" name="asd"/>
+            </label>
+          </p>
+          <p>
+            <label for="name">
+              NAME
+              <br/>
+              <input type="text" id="name" name="name"/>
+            </label>
+          </p>
+          <p>
+            <label for="email">
+              EMAIL
+              <br/>
+              <input type="email" id="email" name="email"/>
+            </label>
+          </p>
+          <p>
+            <label for="message">
+              MESSAGE
+              <br/>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </label>
+          </p>
+          <button class="submit" type="submit">Submit</button>
+        </form>
+      </article>
+    </section>
   </footer>
+  <script>
+    setTimeout(function() {
+      document.getElementById("title").textContent = "Francisco Perez Cejuela";
+    }, 1000);
+  </script>
 </body>
 </html>
