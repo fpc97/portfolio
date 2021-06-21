@@ -13,7 +13,7 @@
   <header id="home" class="header">
     <article class="container">
       <div class="vertical-center">
-        <h1 id="title">Francisco Perez</h1>
+        <h1 id="title">Francisco <br/>Perez </h1>
         <p>I'm a front-end developer who enjoys crafting smooth and polished web systems</p>
         <button>My work</button>
         <button>Contact me!</button>
@@ -130,15 +130,15 @@
       <article class="container">
         <h2>Contact</h2>
         <address>
-          <p><a href="mailto:fran.perez.cejuela@gmail.com">fran.perez.cejuela@gmail.com</a></p>
+          <p><a href="mailto:fran.perez.cejuela@gmail.com">fran.perez.cejuela<wbr/>@gmail.com</a></p>
           <ul>
-            <li><a href="mailto:fran.perez.cejuela@gmail.com">fran.perez.cejuela@gmail.com</a></li>
+            <li><a href="mailto:fran.perez.cejuela@gmail.com">fran.perez.cejuela<wbr/>@gmail.com</a></li>
             <li><a href="#">Whatsapp</a></li>
             <li><a href="https://twitter.com/fpece_">@fpece_</a></li>
           </ul>
         </address>
         <form>
-          <p class="honeypot">
+          <p class="hp">
             <label for="asd">
               ASD
               <br/>
@@ -173,7 +173,7 @@
   </footer>
   <script>
     setTimeout(function() {
-      document.getElementById("title").textContent = "Francisco Perez Cejuela";
+      document.getElementById("title").innerHTML = document.getElementById("title").innerHTML + "Cejuela";
     }, 1000);
   </script>
 </body>
