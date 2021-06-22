@@ -146,15 +146,15 @@ ul, ol{
   color: white;
 }
 
-@media(min-width: 700px) {
-  .header{
-    height: 100vh;
-  }
-}
-
 .header .container{
   position: relative;
   height: 100%;
+}
+
+.header .container::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .header .vertical-center{
@@ -164,11 +164,14 @@ ul, ol{
 
 @media (min-width: 768px) {
   .header .vertical-center{
-    width: 75%;
+    width: 74%;
   }
 }
 
 @media (min-width: 700px) and (min-height: 500px) {
+  .header{
+    height: 100vh;
+  }
   .header .vertical-center{
     position: absolute;
     /*transform: translateY(-50%);*/
@@ -192,11 +195,17 @@ ul, ol{
   font-size: 1.9rem;
   font-weight: bold;
   color: white;
-  padding: 2.2rem 5rem;
+  padding: 2.2rem 4.2rem;
   border: none;
   border-radius: .3rem;
   cursor: pointer;
   transition: background-color .2s;
+}
+
+@media (min-width: 960px) {
+  .header button{
+    padding: 2.2rem 5rem;
+  }
 }
 
 .header button:first-of-type{
@@ -220,12 +229,14 @@ ul, ol{
 @media(min-width: 768px) {
   .header .nav{
     text-align: end;
-    font-size: 2.1rem;
     float: left;
-    width: 25%;
+    width: 26%;
     padding-top: 4rem;
     display: inline-block;
     right: 9rem;
+  }
+  .header .nav ul{
+    font-size: 1.75rem;
   }
 }
 

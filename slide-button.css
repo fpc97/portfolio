@@ -9,7 +9,7 @@
   color: #fff; /*For IE*/
 }
 
-.btn-slide:after {
+.btn-slide::after {
   content: "";
   position: absolute;
   top: 0;
@@ -19,18 +19,18 @@
   /*background: linear-gradient(90deg, #0058D0 50%, transparent 50%);*/
   z-index: -1;
 }
-.btn-slide-blue:after {
+.btn-slide-blue::after {
   background: linear-gradient(90deg, #0058D0 50%, transparent 50%);
 }
-.btn-slide-orange:after {
+.btn-slide-orange::after {
   background: linear-gradient(90deg, #ff5842 50%, transparent 50%);
 }
-.btn-slide-black:after {
+.btn-slide-black::after {
   background: linear-gradient(90deg, #29292c 50%, transparent 50%);
 }
 
 .btn-slide,
-.btn-slide:after {
+.btn-slide::after {
   background-size: 300%;
   background-position: 100%;
   transition-duration: .25s;
@@ -38,7 +38,7 @@
 }
 
 .btn-slide:hover,
-.btn-slide:hover:after {
+.btn-slide:hover::after {
   background-position: 150%;
 
   color: black; /*For IE*/
