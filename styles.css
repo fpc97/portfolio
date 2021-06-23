@@ -84,16 +84,18 @@ p{
   }
 }
 
-.about, .case-studies{
-  margin-top: 9rem;
+.about .container,
+.case-studies .container{
+  padding-top: 9rem;
 }
 /* 4K */
 @media(min-height: 1081px) {
   .container{
     max-width: 120vh;
   }
-  .about, .case-studies{
-    margin-top: 8.33vh;
+  .about .container,
+  .case-studies .container{
+    padding-top: 8.33vh;
   }
   .case-studies{
     margin-bottom: 8.33vh;
@@ -220,7 +222,7 @@ ul, ol{
 }
 
 .heroback rect{
-  fill: #0058D0;
+  /*fill: #0058D0;*/
 }
 
 /* Header ----------------------------------------------------------------------------------------------------------------------- */

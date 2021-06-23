@@ -10,24 +10,46 @@
   <link rel="stylesheet" href="slide-button.css">
 </head>
 <body>
-  <svg class="heroback" viewBox="0 0 4040 4840" preserveAspectRatio="xMidYMin slice">
-    <rect x="-370" y="-480" width="161" height="1000" transform="rotate(-37 80 0)"/>
-    <rect x="-210" y="-360" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect x="-50" y="-240" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect x="110" y="-120" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect x="270" y="0" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect x="430" y="120" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect x="590" y="240" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect x="750" y="360" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect x="910" y="480" width="161" height="1300" transform="rotate(-37 80 0)"/>
-    <rect class="long" x="1070" y="600" width="161" height="4480" transform="rotate(-37 80 0)"/>
-    <rect class="long" x="1230" y="720" width="161" height="4680" transform="rotate(-37 80 0)"/>
-    <rect class="long" x="1390" y="840" width="161" height="4380" transform="rotate(-37 80 0)"/>
-    <rect class="ultrawide" x="1420" y="600" width="161" height="4080" transform="rotate(-37 80 0)"/>
-    <rect class="mobile" x="1420" y="600" width="161" height="1700" transform="rotate(-37 80 0)"/>
-    <rect class="mobile" x="1580" y="720" width="161" height="1700" transform="rotate(-37 80 0)"/>
-    <rect class="mobile" x="1740" y="840" width="161" height="1700" transform="rotate(-37 80 0)"/>
-    <rect class="mobile" x="1900" y="840" width="161" height="1700" transform="rotate(-37 80 0)"/>
+  <svg class="heroback" viewBox="0 0 4040 4840" preserveAspectRatio="xMidYMin slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <linearGradient id="Gradient1" gradientTransform="rotate(90)">
+        <stop offset="0%"  stop-color="#0058D0" />
+        <stop offset="100%" stop-color="#1C6BD5" />
+      </linearGradient>
+      <linearGradient id="Gradient2" gradientTransform="rotate(90)">
+        <stop offset="0%"  stop-color="#0058D0" />
+        <stop offset="100%" stop-color="#2E76D9" />
+      </linearGradient>
+      <linearGradient id="Gradient3" gradientTransform="rotate(90)">
+        <stop offset="0%"  stop-color="#0058D0" />
+        <stop offset="100%" stop-color="#5D95E1" />
+      </linearGradient>
+      <linearGradient id="Gradient4" gradientTransform="rotate(90)">
+        <stop offset="0%"  stop-color="#0058D0" />
+        <stop offset="100%" stop-color="#8BB3EA" />
+      </linearGradient>
+      <linearGradient id="Gradient5" gradientTransform="rotate(90)">
+        <stop offset="0%"  stop-color="#0058D0" />
+        <stop offset="100%" stop-color="#B9D1F2" />
+      </linearGradient>
+    </defs>
+    <rect x="-500" y="-480" width="161" height="1000" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect x="-340" y="-360" width="161" height="1300" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect x="-180" y="-240" width="161" height="1300" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect x="-200" y="-120" width="161" height="1300" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect x="140" y="0" width="161" height="1300" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect x="300" y="120" width="161" height="1300" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect x="460" y="240" width="161" height="1180" transform="rotate(-37 80 0)" fill="url(#Gradient3)"/>
+    <rect x="620" y="360" width="161" height="1160" transform="rotate(-37 80 0)" fill="url(#Gradient2)"/>
+    <rect x="780" y="480" width="161" height="1090" transform="rotate(-37 80 0)" fill="url(#Gradient4)"/>
+    <rect class="long" x="940" y="600" width="161" height="4480" transform="rotate(-37 80 0)" fill="url(#Gradient5)"/>
+    <rect class="long" x="1100" y="720" width="161" height="4680" transform="rotate(-37 80 0)" fill="url(#Gradient4)"/>
+    <rect class="long" x="1260" y="840" width="161" height="4380" transform="rotate(-37 80 0)" fill="url(#Gradient5)"/>
+    <rect class="ultrawide" x="1420" y="600" width="161" height="4080" transform="rotate(-37 80 0)" fill="url(#Gradient4)"/>
+    <rect class="mobile" x="1420" y="600" width="161" height="1700" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect class="mobile" x="1580" y="720" width="161" height="1700" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect class="mobile" x="1740" y="840" width="161" height="1700" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
+    <rect class="mobile" x="1900" y="840" width="161" height="1700" transform="rotate(-37 80 0)" fill="url(#Gradient1)"/>
   </svg>
   <header id="home" class="header">
     <article class="container">
@@ -195,5 +217,6 @@
       document.getElementById("title").innerHTML = document.getElementById("title").innerHTML + "Cejuela";
     }, 1000);
   </script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
