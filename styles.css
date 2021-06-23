@@ -1,12 +1,26 @@
 /* TEST DELETE LATER */
 .header .vertical-center{
-  background-color: #0058D0;
+  /*background-color: #0058D0;*/
 }
+/*
+body::before{
+  content: "";
+  display: inline-block;
+  height: 95vh;
+  width: 100%;
+  max-width: 100rem;
+  background-color: #0058D0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -9999;
+}*/
 
 /*
 Break points:
 200 (min)
 400
+768
 960
 1200
 1920
@@ -28,19 +42,6 @@ html{
 body{
   font-family: "Work Sans", "Arial", sans-Serif;
   color: #1D1D1F;
-}
-
-body::before{
-  content: "";
-  display: inline-block;
-  height: 95vh;
-  width: 100%;
-  max-width: 100rem;
-  background-color: #0058D0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -9999;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -80,6 +81,22 @@ p{
 @media(min-width: 700px) {
   .container{
     padding: 0 9rem;
+  }
+}
+
+.about, .case-studies{
+  margin-top: 9rem;
+}
+/* 4K */
+@media(min-height: 1081px) {
+  .container{
+    max-width: 120vh;
+  }
+  .about, .case-studies{
+    margin-top: 8.33vh;
+  }
+  .case-studies{
+    margin-bottom: 8.33vh;
   }
 }
 
@@ -141,7 +158,72 @@ ul, ol{
   
 }
 
-/* Header */
+/* 4K */
+@media(min-height: 1081px) {
+  h1{
+    font-size: 7.7vh;
+  }
+  h2{
+    font-size: 6.6vh;
+  }
+  h3{
+    font-size: 4.4vh;
+    line-height: 6.4vh;
+    margin-bottom: 3.43vh;
+  }
+  h4{
+    font-size: 2.5vh;
+  }
+  
+  p, span, ul, ol{
+    font-size: 1.94vh;
+  }
+  
+  p{
+    max-width: 55vh;
+    line-height: 4.62vh;
+    margin-bottom: 1.85vh;
+  }
+}
+
+/* Hero background -------------------------------------------------------------------------------------------------------------- */
+.heroback{
+  /*background-color: rgba(255, 0, 0, .3);*/
+  /*min-width: 120px;*/
+  z-index: -2;
+  position: absolute;
+  height: 520vh;
+  width: 100vw;
+  max-width: 3840px;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+}
+
+.heroback .mobile{
+  display: none;
+}
+
+@media(max-width: 767px) {
+  .heroback .mobile{
+    display: inline-block;
+  }
+  .heroback .long{
+    height: 1400px;
+  }
+}
+
+@media(max-width: 1070px) {
+  .heroback .ultrawide{
+    display: none;
+  }
+}
+
+.heroback rect{
+  fill: #0058D0;
+}
+
+/* Header ----------------------------------------------------------------------------------------------------------------------- */
 .header{
   color: white;
 }
@@ -191,6 +273,17 @@ ul, ol{
   margin-bottom: 3.4rem;
 }
 
+/* 4K */
+@media(min-height: 1081px) {
+  .header h1{
+    max-width: none;
+  }
+  .header p{
+    max-width: 56%;
+    margin-bottom: 3.4rem;
+  }
+}
+
 .header button{
   font-size: 1.9rem;
   font-weight: bold;
@@ -205,6 +298,15 @@ ul, ol{
 @media (min-width: 960px) {
   .header button{
     padding: 2.2rem 5rem;
+  }
+}
+
+/* 4K */
+@media (min-height: 1081px) {
+  .header button{
+    font-size: 1.76vh;
+    padding: 2.04vh 4.63vh;
+    border-radius: .28vh;
   }
 }
 
@@ -240,6 +342,12 @@ ul, ol{
   }
 }
 
+@media(min-width: 960px) {
+  .header .nav ul{
+    font-size: 2rem;
+  }
+}
+
 @media(min-height: 500px) {
   .header .nav{
     position: absolute;
@@ -264,7 +372,27 @@ ul, ol{
   padding: 1.2rem 2rem;
 }
 
-/* About */
+/* 4K */
+@media(min-height: 1081px) {
+  .header .nav ul{
+    font-size: 1.85vh;
+  }
+  .header .nav li{
+    margin-bottom: 4.6vh;
+  }
+  .header .nav a,
+  .header .nav a:link,
+  .header .nav a:visited{
+    padding: 1.1vh 1.8vh;
+  }
+}
+
+/* Aside */
+.aside{
+  position: absolute;
+}
+
+/* About ------------------------------------------------------------------------------------------------------------------------ */
 .about{
 
 }
@@ -277,13 +405,24 @@ ul, ol{
   margin-top: 6rem;
 }
 
-/* Case studies */
+/* 4K */
+@media(min-height: 1081px) {
+  .about li{
+    margin-bottom: 1.9vh;
+  }
+  
+  .about h3{
+    margin-top: 5.56vh;
+  }
+}
+
+/* Case studies ----------------------------------------------------------------------------------------------------------------- */
 .case-studies{
 
 }
 
 .case-studies h2{
-  margin-bottom: 8rem;
+  /*margin-bottom: 8rem;*/
 }
 
 .case-studies h3{
@@ -331,7 +470,24 @@ ul, ol{
 	flex-grow: 1;
 }
 
-/* Contact */
+/* 4K */
+@media(min-height: 1081px) {
+  .case-studies h3{
+    margin-bottom: 1.85vh;
+    max-width: 46.3vh;
+  }
+
+  .project ul{
+    max-width: 55vh;
+  }
+
+  .project li{
+    font-size: 1.48vh;
+    padding: .74vh 1.48vh;
+  }  
+}
+
+/* Contact ----------------------------------------------------------------------------------------------------------------------- */
 .footer{
   background-color: #1D1D1F;
   color: white;
@@ -402,4 +558,22 @@ ul, ol{
   wide as its column (and the Name field) */
   justify-self: start;
   font-size: 1.8rem;
+}
+
+/* 4K */
+@media(min-height: 1081px) {
+  .contact address{
+    max-width: none;
+    width: 30%;
+  }
+  .contact form p{
+    margin-bottom: .93vh;
+  }
+
+  .contact input,
+  .contact textarea{
+    padding: .93vh;
+    font-size: 1.67vh;
+    width: 100%;
+  }
 }
