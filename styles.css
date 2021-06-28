@@ -673,6 +673,7 @@ ul, ol{
   color: white;
   position: relative;
   z-index: 10;
+  min-height: 94vh;
 }
 
 .contact a,
@@ -702,7 +703,7 @@ ul, ol{
   .contact address{
     float: left;
     width: 45%;
-    max-width: 30rem;
+    max-width: 35rem;
   }
   
   .contact form{
