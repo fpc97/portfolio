@@ -68,7 +68,7 @@ p, span, ul, ol{
 }
 
 p{
-  line-height: 5rem;
+  line-height: 6rem;
   max-width: 60rem;
   margin-bottom: 2rem;
 }
@@ -230,6 +230,10 @@ ul, ol{
   color: white;
 }
 
+.header h1{
+  content: "Francisco Perez Cejuela"
+}
+
 .header .container{
   position: relative;
   height: 100%;
@@ -286,45 +290,51 @@ ul, ol{
   }
 }
 
-.header button{
+.header h1 ~ a{
   font-size: 1.9rem;
   font-weight: bold;
   color: white;
   padding: 2.2rem 4.2rem;
   border: none;
   border-radius: .3rem;
-  cursor: pointer;
   transition: background-color .2s;
+  text-decoration: none;
 }
 
 @media (min-width: 960px) {
-  .header button{
+  .header h1 ~ a{
     padding: 2.2rem 5rem;
   }
 }
 
 /* 4K */
 @media (min-height: 1081px) {
-  .header button{
+  .header h1 ~ a{
     font-size: 1.76vh;
     padding: 2.04vh 4.63vh;
     border-radius: .28vh;
   }
 }
 
-.header button:first-of-type{
+.header h1 ~ a:first-of-type{
+  border: 2px solid #ff5842;
   background-color: #ff5842;
   margin-right: 2rem;
 }
-.header button:last-of-type{
+.header h1 ~ a:last-of-type{
+  border: 2px solid #1D1D1F;
   background-color: #1D1D1F;
 }
 
-.header button:first-of-type:hover{
-  background-color: #ff6753;
+.header h1 ~ a:first-of-type:hover{
+  background: transparent;
+  color: #ff5842;
+  /*background-color: #ff6753;*/
 }
-.header button:last-of-type:hover{
-  background-color: #29292c;
+.header h1 ~ a:last-of-type:hover{
+  background: transparent;
+  color: #1D1D1F;
+  /*background-color: #29292c;*/
 }
 
 .header .nav{
@@ -389,9 +399,177 @@ ul, ol{
   }
 }
 
-/* Aside */
+/* Aside ----------------------------------------------------------------------------------------------------------------------- */
 .aside{
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+
+@media(min-height: 200px) and (min-width: 700px) {
+  .aside{
+    display: block;
+  }
+}
+
+@media(min-height: 400px) {
+  .aside .titles{
+    position: relative;
+    width: 6.3rem;
+    height: 23rem;
+    overflow: hidden;
+    margin: 1rem;
+  }
+}
+
+@media(min-height: 600px) {
+  .aside .titles{
+    height: 65vh;
+    height: calc(100vh - 32%);
+  }
+}
+
+.aside .titles a{
   position: absolute;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: inline-block;
+  /*transform: rotate(-90deg) translate(-4rem, -50%);*/
+  left: 60%;
+  transform: translate(-50%, 75%) rotate(-90deg);
+  /* Same as .aside width */
+  height: 6.3rem;
+  color: #1D1D1F;
+  text-decoration: none;
+  width: 15rem;
+  white-space: nowrap;
+  display: none;
+  animation-name: titles-a-intro;
+  animation-duration: 2s;
+}
+
+.aside.scrolled .titles a{
+  display: inline-block;
+}
+
+.aside .titles a::after{
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: 130%;
+  height: .2rem;
+  width: 60vh;
+  background-image: linear-gradient(90deg, transparent 50%, #1D1D1F 50%);
+  background-size: 300%;
+  background-position-x: 100%;
+  cursor: auto;
+}
+
+.aside.scrolled .titles a::after{
+  animation: titles-after-intro .75s ease-out;
+}
+
+/* 4K */
+@media(min-height: 1081px) {
+  .aside .titles{
+    width: 5.8vh;
+  }
+
+  .aside .titles a{
+    height: 6.8vh;
+    width: calc(4rem + 8vh);
+    font-size: 1.86vh;
+  }
+
+  .aside .titles::after{
+    top: 20rem;
+  }
+}
+
+.aside ul{
+  /*transform: translateY(-50%);*/
+  width: 6.3rem;
+  /*padding: 1.8rem 0;*/
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
+
+.aside li{
+  position: relative;
+  margin: 1.36rem 0;
+  width: 100%;
+  text-align: center;
+  z-index: 111;
+}
+
+@media(min-height: 400px) {
+  .aside li{
+    margin: 3.1vh 0;
+  }
+}
+
+.aside li svg{
+  min-height: 3rem;
+  height: 4vh;
+  /*height: 4.5rem;*/
+}
+
+.aside li:nth-child(3n-2) svg{
+  stroke: #3a380a;
+  fill: #FFF500;
+}
+.aside li:nth-child(3n-1) svg{
+  stroke: #1D1D1F;
+  fill: #1D1D1F;
+}
+.aside li:nth-child(3n) svg{
+  stroke: #350E09;
+  fill: #FF5F4A;
+}
+
+.aside li svg:hover{
+  fill: white;
+  stroke: black;
+  stroke-width: 1px;
+}
+.aside li svg:hover::before{
+  content: "";
+  background-color: #5A93E1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  border-radius: 999rem;
+}
+.aside li svg::before{
+  transition-property: height, width;
+  transition-duration: .2s;
+  height: 0;
+  width: 0;
+}
+
+@keyframes titles-a-intro{
+  0%{
+    color: transparent;
+  };
+  90%{
+    color: transparent;
+  };
+  100%{
+    color: red;
+  }
+}
+
+@keyframes titles-after-intro{
+  0%{
+    background-position-x: 140%;
+  };
+  100%{
+    background-position-x: 100%;
+  }
 }
 
 /* About ------------------------------------------------------------------------------------------------------------------------ */
@@ -493,6 +671,8 @@ ul, ol{
 .footer{
   background-color: #1D1D1F;
   color: white;
+  position: relative;
+  z-index: 10;
 }
 
 .contact a,
