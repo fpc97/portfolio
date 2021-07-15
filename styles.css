@@ -565,6 +565,8 @@ ul, ol{
   min-height: 3rem;
   height: 4vh;
   /*height: 4.5rem;*/
+
+  transition: .1s fill;
 }
 
 .aside li:nth-child(3n-2) svg{
@@ -580,12 +582,12 @@ ul, ol{
   fill: #FF5F4A;
 }
 
-.aside li svg:hover{
+.aside li a:hover svg{
   fill: white;
   stroke: black;
   stroke-width: 1px;
 }
-.aside li svg:hover::before{
+.aside li a:hover svg::before{
   content: "";
   background-color: #5A93E1;
   height: 100%;
