@@ -389,6 +389,7 @@ ul, ol{
   /*background-color: #29292c;*/
 }
 
+/* Nav ----------------------------------------------------------------------------------------------------------------- */
 .header .nav{
   display: none;
 }
@@ -449,6 +450,63 @@ ul, ol{
   .header .nav a:visited{
     padding: 1.1vh 1.8vh;
   }
+}
+
+/* Nav Mobile ----------------------------------------------------------------------------------------------------------- */
+.header .nav-mobile{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0058D0;
+  z-index: 9999;
+}
+
+@media (min-width: 768px) {
+  .header .nav-mobile{
+    display: none;
+  }
+}
+
+.header .nav-mobile nav{
+  position: absolute;
+  right: 0;
+  bottom: 20vw;
+  bottom: calc(8rem + 10vw);
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  text-align: end;
+  border-bottom: 1px solid white;
+}
+
+.header .nav-mobile .social-media{
+  position: absolute;
+  right: 2rem;
+  bottom: calc(4rem + 5vw);
+  transform: translateY(50%);
+}
+
+.header .nav-mobile .social-media li{
+  display: inline-block;
+  margin-left: 4vw;
+}
+
+.header .nav-mobile .social-media svg{
+  height: calc(2rem + 8vw);
+  fill: white;
+}
+
+.header .nav-mobile nav a,
+.header .nav-mobile nav a:link,
+.header .nav-mobile nav a:visited{
+  padding: 3vw 0;
+  font-size: 7vw;
+  font-size: calc(-.03rem + 9.1vw);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /* Aside ----------------------------------------------------------------------------------------------------------------------- */

@@ -8,7 +8,7 @@
   aside.classList.remove("scrolled");
 
   window.addEventListener("scroll", function() {
-    if (isScrolledViewportHeight()) {
+    if (isScrolledViewportHeight(.89)) {
       aside.classList.add("scrolled");
     } else {
       aside.classList.remove("scrolled");
