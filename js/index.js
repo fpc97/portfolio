@@ -17,6 +17,10 @@ if (window.scrollTo && document.querySelectorAll) {
       if (linkedElement) {
         anchors[i].addEventListener("click", function(e) {
           e.preventDefault();
+
+          if (history.pushState) {
+            history.pushState(null, null, '#' + linkedElement.id);
+          }
     
           window.scrollTo({
             top: linkedElement.offsetTop,
