@@ -1,3 +1,5 @@
+"use strict";
+
 // Smooth scrolling
 if (window.scrollTo && document.querySelectorAll) {
   var anchors = document.querySelectorAll("a[href^='#']");
@@ -7,7 +9,10 @@ if (window.scrollTo && document.querySelectorAll) {
       var linkedId = anchors[i].getAttribute("href");
       var linkedElement = document.getElementById(linkedId.substring(1));
 
-      console.log(linkedId, linkedElement)
+      if (!linkedElement) {
+        console.warn('Element with id ' + linkedId + ' not found')
+        return
+      }
 
       if (linkedElement) {
         anchors[i].addEventListener("click", function(e) {

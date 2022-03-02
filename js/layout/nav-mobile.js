@@ -1,13 +1,16 @@
+"use strict";
+
 (function() {
   var nav = document.getElementById("nav");
   var navMobileContainer = document.getElementById("nav-mobile");
-  var aside = document.getElementById("aside")
+  var aside = document.getElementById("aside");
 
   var navMobile = nav.cloneNode(true);
   var navMobileLinks = navMobile.getElementsByTagName("a");
 
   var asideSocialMediaList = aside.getElementsByTagName("ul")[0];
-  asideSocialMediaList.className = "social-media";
+  var socialMediaListCopy = asideSocialMediaList.cloneNode(true);
+  socialMediaListCopy.className = "social-media";
 
   if (navMobileLinks.length) {
     navMobile.removeAttribute("id");
@@ -19,5 +22,5 @@
   }
 
   navMobileContainer.appendChild(navMobile);
-  navMobileContainer.appendChild(asideSocialMediaList);
+  navMobileContainer.appendChild(socialMediaListCopy);
 })();

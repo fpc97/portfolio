@@ -1,3 +1,5 @@
+"use strict";
+
 (function() {
   var aside = document.getElementsByClassName("aside")[0];
 
@@ -8,7 +10,7 @@
   aside.classList.remove("scrolled");
 
   window.addEventListener("scroll", function() {
-    if (isScrolledViewportHeight(.89)) {
+    if (utils.isScrolledViewportHeight(.89)) {
       aside.classList.add("scrolled");
     } else {
       aside.classList.remove("scrolled");

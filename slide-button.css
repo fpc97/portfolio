@@ -1,7 +1,7 @@
 .btn-slide {
   padding: 8px 16px;
   cursor: pointer;
-  background: linear-gradient(90deg, #fff 50%, black 50%);
+  background: linear-gradient(90deg, white 50%, black 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -29,6 +29,13 @@
   background: linear-gradient(90deg, #29292c 50%, transparent 50%);
 }
 
+.btn-slide-white-yellow::after {
+  background: white linear-gradient(90deg, #0a1d35 50%, transparent 50%);
+}
+.btn-slide-orange-yellow::after {
+  background: #ff5842 linear-gradient(90deg, #0a1d35 50%, transparent 50%);
+}
+
 .btn-slide,
 .btn-slide::after {
   background-size: 300%;
@@ -37,9 +44,22 @@
   transition-timing-function: ease-out;
 }
 
+.btn-slide-backwards,
+.btn-slide-backwards::after {
+  background-position: 230%;
+  transition-duration: .3s;
+}
+
 .btn-slide:hover,
 .btn-slide:hover::after {
   background-position: 150%;
+
+  color: black; /*For IE*/
+}
+
+.btn-slide-backwards:hover,
+.btn-slide-backwards:hover::after {
+  background-position: 170%;
 
   color: black; /*For IE*/
 }
