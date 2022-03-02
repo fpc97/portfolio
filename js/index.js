@@ -19,7 +19,13 @@ if (window.scrollTo && document.querySelectorAll) {
           e.preventDefault();
 
           if (history.pushState) {
-            history.pushState(null, null, '#' + linkedElement.id);
+            var id = linkedElement.id;
+
+            if (id !== 'home') {
+              history.pushState(null, null, '#' + id);
+            } else {
+              history.replaceState(null, null, ' ');
+            }
           }
     
           window.scrollTo({
