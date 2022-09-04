@@ -1,0 +1,3 @@
+[submodule "realestate-front"]
+	path = realestate-front
+	url = https://github.com/fpc97/realestate-front
