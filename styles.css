@@ -64,7 +64,7 @@ h2,
 }
 h3{
   font-size: 2.6rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 
   font-weight: 800;
 }
@@ -103,11 +103,12 @@ p{
   }
   h2{
     font-size: 6rem;
+    margin-bottom: 5rem;
   }
   h3{
     font-size: 3.4rem;
     line-height: 5rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
   }
 }
 @media(min-width: 700px) {
@@ -122,7 +123,7 @@ p{
   h3{
     font-size: 4.8rem;
     line-height: 7rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
   }
   
   p, span, ul, ol{
@@ -151,7 +152,7 @@ p{
   h3{
     font-size: 4.4vh;
     line-height: 6.4vh;
-    margin-bottom: 3.43vh;
+    /* margin-bottom: 3.43vh; */
   }
   
   p, span, ul, ol{
@@ -1058,7 +1059,7 @@ ul, ol{
 }
 
 .project h3{
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .project h3 + p{
@@ -1073,7 +1074,8 @@ ul, ol{
   margin-bottom: 2rem;
   background-color: blue;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  box-shadow: 0 15px 20px -6px rgba(0, 0, 0, .3);
+  object-fit: cover;
 }
 
 .project .interaction-buttons{
@@ -1101,7 +1103,7 @@ ul, ol{
   stroke-width: 1px;
 }
 .project .interaction-buttons a > svg:hover{
-  fill: #fff943;
+  fill: #fffdb3;
   stroke: #a7a22d;
 }
 
@@ -1132,7 +1134,7 @@ ul, ol{
 	display: inline-block;
 	color: white;
 	font-size: 1.6rem;
-	font-weight: bold;
+	/* font-weight: bold; */
 	padding: .8rem .8rem;
 	text-align: center;
 
@@ -1149,7 +1151,6 @@ ul, ol{
   .project h3{
     font-size: calc(2.6rem + ((1vw - 0.2rem) * 10));
     min-height: 0vw;
-    margin-bottom: calc(1rem + ((1vw - 0.2rem) * 0));
 
     /* margin-bottom: calc(1rem + ((1vw - 0.2rem) * 8)); */
   }
@@ -1182,10 +1183,10 @@ ul, ol{
   }
 
   .project h3 + p{
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     line-height: 3.4rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: .5rem;
   }
 
   .project img{
@@ -1262,6 +1263,7 @@ ul, ol{
 
   .case-studies h2{
     font-size: 7.2rem;
+    margin-bottom: 7rem;
   }
 }
 /* 

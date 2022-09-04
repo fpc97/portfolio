@@ -23,7 +23,8 @@
     typescript: ['007acc', 'ffffff'],
     mongo: ['3FA037', 'ffffff'],
     postgresql: ['336791', 'ffffff'],
-    sql: ['00758F', 'ffffff']
+    sql: ['00758F', 'ffffff'],
+    vite: ['bd34fe', 'ffffff']
   };
 
   // Credits: simpleicons.org
