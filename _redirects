@@ -1,3 +1,2 @@
 /realestate/api/* https://realestate-dev-api.herokuapp.com/:splat 200!
 /realestate/* https://astonishing-dango-c25af8.netlify.app/:splat 200!
-/sustainable-development/* https://sustainable-develop.netlify.app/:splat 200!
