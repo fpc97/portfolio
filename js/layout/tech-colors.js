@@ -14,6 +14,8 @@
     sass: ['d75192', 'ffffff'],
     css: ['264DE4', 'EBEBEB'],
     node: ['65B95E', '262626'],
+    graphql: ['e535ab', 'ffffff'],
+    netlifycms: ['CAF951', '1A1C19'],
     git: ['FF6A4B', '3d2d00'],
     npm: ['cc3534', 'ffffff'],
     illustrator: ['251003', 'F57F22'],
