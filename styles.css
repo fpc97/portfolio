@@ -1024,6 +1024,7 @@ ul, ol{
 
 .about h3{
   margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
 @media(min-width: 400px) {
@@ -1038,6 +1039,11 @@ ul, ol{
 @media(min-width: 960px) {
   .about .tech-skills li{
     width: 13rem;
+  }
+
+  .about h3{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
   }
 }
 
