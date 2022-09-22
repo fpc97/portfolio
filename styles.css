@@ -80,6 +80,13 @@ p{
   margin-bottom: 1.6rem;
 }
 
+p a,
+p a:visited,
+p a:link{
+  color:#174384;
+  text-decoration: none;
+}
+
 @media(min-width: 200px) {
   h1{
     font-size: calc(1.8rem + ((1vw - 0.2rem) * 5));
